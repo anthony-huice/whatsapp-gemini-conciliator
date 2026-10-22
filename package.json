@@ -1,0 +1,22 @@
+{
+  "name": "whatsapp-gemini-conciliator",
+  "version": "1.0.0",
+  "description": "Serverless B2B Payment Reconciliation & NOC Incident Triage Engine powered by Meta WhatsApp Cloud API, Google Gemini 2.0 Flash, Zod, and Supabase PostgreSQL",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test tests/conciliator.test.ts",
+    "simulate": "npx tsx scripts/simulate-whatsapp-webhook.ts"
+  },
+  "dependencies": {
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  },
+  "author": "Anthony Yariff Huice Martínez",
+  "license": "MIT"
+}
